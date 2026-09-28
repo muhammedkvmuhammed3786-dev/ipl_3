@@ -37,7 +37,8 @@ SELECT match_id,                           -- which match
 FROM   v_ball                              -- built in 3.6, so the filter 
 WHERE  innings IN (1,2)                    -- ignore super-over innings 3 
 GROUP  BY match_id, innings;               -- one row per team per match
------------------------------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------------------------------------
 DROP VIEW IF EXISTS v_match_totals; 
 CREATE VIEW v_match_totals AS 
 SELECT m.*,                                    -- everything about the ma 

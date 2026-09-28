@@ -23,4 +23,3 @@ select *,
         'M.Chinnaswamy','M Chinnaswamy'
       ) as venue_clean
 from matches;
-            
